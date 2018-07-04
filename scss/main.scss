@@ -1,0 +1,59 @@
+@import "reset";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.plot-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .equation,
+  .rSquared {
+    margin-top: 30px;
+    font-weight: bold;
+    width: 400px;
+  }
+
+  .form {
+    margin-top: 30px;
+
+    button,
+    textarea {
+      -webkit-appearance: none;
+      border-radius: 3px;
+      padding: 8px 10px;
+    }
+
+    textarea {
+      display: block;
+      width: 400px !important;
+      background: rgb(250, 250, 250);
+      border: 1px solid rgb(220, 220, 220);
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 8px;
+      background: blue;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
+.plot {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
